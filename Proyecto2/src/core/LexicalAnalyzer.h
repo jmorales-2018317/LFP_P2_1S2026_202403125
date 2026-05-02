@@ -52,6 +52,7 @@ private:
     bool isDigit(char c) const;
     bool isIdentifierStart(char c) const;
     bool isIdentifierPart(char c) const;
+    bool isInvalidStringChar(char c) const;
 
     // Estados terminales del AFD (cada uno emite UN token).
     Token readIdentifier();

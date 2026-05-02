@@ -142,7 +142,6 @@ std::string ReportGenerator::generateKanbanHtml(const Tablero& board) {
     }
     html << "</section>\n";
 
-    html << "<footer>Generado por TaskScript - Universidad de San Carlos de Guatemala</footer>\n";
     html << "</body>\n</html>\n";
     return html.str();
 }
@@ -244,7 +243,6 @@ std::string ReportGenerator::generateCargaResponsableHtml(const Tablero& board) 
     html << "    </tbody>\n";
     html << "  </table>\n";
     html << "</main>\n";
-    html << "<footer>Generado por TaskScript - Universidad de San Carlos de Guatemala</footer>\n";
     html << "</body>\n</html>\n";
     return html.str();
 }

@@ -87,6 +87,17 @@ bool LexicalAnalyzer::isIdentifierPart(char c) const {
     return isLetter(c) || isDigit(c) || c == '_';
 }
 
+bool LexicalAnalyzer::isInvalidStringChar(char c) const {
+    // Caracteres especiales no permitidos dentro de literales de cadena.
+    switch (c) {
+        case '@': case '$': case '#': case '&':
+        case '~': case '^': case '!': case '|':
+            return true;
+        default:
+            return false;
+    }
+}
+
 void LexicalAnalyzer::skipWhitespace() {
     while (!isAtEnd()) {
         char c = peek();
@@ -191,6 +202,14 @@ Token LexicalAnalyzer::readString() {
         if (c == '\n') {
             // Cadena sin cerrar antes de fin de linea: error CRITICO.
             break;
+        }
+        if (isInvalidStringChar(c)) {
+            std::string ch(1, c);
+            errorManager_.addLexicalError(
+                ch,
+                "Caracter invalido '" + ch + "' dentro de cadena.",
+                line_, column_,
+                ErrorSeverity::Error);
         }
         buffer.push_back(advance());
     }
