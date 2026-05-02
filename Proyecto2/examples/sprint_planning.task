@@ -1,0 +1,20 @@
+TABLERO "Sprint Planning - Mayo 2026" {
+COLUMNA "Backlog" {
+  tarea: "Investigar opciones de despliegue" [prioridad: BAJA, responsable: "Carla", fecha_limite: 2026-05-25],
+  tarea: "Refactorizar modulo de pagos" [prioridad: MEDIA, responsable: "Hugo", fecha_limite: 2026-05-29],
+  tarea: "Documentar API publica" [prioridad: MEDIA, responsable: "Lucia", fecha_limite: 2026-06-02],
+};
+COLUMNA "Sprint Actual" {
+  tarea: "Implementar autenticacion 2FA" [prioridad: ALTA, responsable: "Esteban", fecha_limite: 2026-05-12],
+  tarea: "Crear endpoint de reportes" [prioridad: ALTA, responsable: "Hugo", fecha_limite: 2026-05-14],
+  tarea: "Pruebas de carga" [prioridad: MEDIA, responsable: "Carla", fecha_limite: 2026-05-15],
+};
+COLUMNA "Revision" {
+  tarea: "Code review feature flags" [prioridad: ALTA, responsable: "Lucia", fecha_limite: 2026-05-09],
+  tarea: "QA de panel admin" [prioridad: MEDIA, responsable: "Esteban", fecha_limite: 2026-05-09],
+};
+COLUMNA "Hecho" {
+  tarea: "Migracion a Qt 6" [prioridad: ALTA, responsable: "Carla", fecha_limite: 2026-04-28],
+  tarea: "Diagrama de clases" [prioridad: BAJA, responsable: "Lucia", fecha_limite: 2026-04-22],
+};
+};
