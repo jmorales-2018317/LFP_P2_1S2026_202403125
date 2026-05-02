@@ -1,0 +1,7 @@
+TABLERO "Demo" {
+COLUMNA "TODO" {
+};
+COLUMNA "En Progreso" {
+  tarea: "Solo una" [prioridad: MEDIA, responsable: "Diana", fecha_limite: 2026-06-01]
+};
+};

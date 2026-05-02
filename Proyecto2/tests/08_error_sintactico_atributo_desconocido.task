@@ -1,0 +1,5 @@
+TABLERO "Demo" {
+COLUMNA "TODO" {
+  tarea: "Mal atributo" [prioridad: ALTA, etiqueta: "urgente", fecha_limite: 2026-05-22]
+};
+};

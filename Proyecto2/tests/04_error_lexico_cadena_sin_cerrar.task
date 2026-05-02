@@ -1,0 +1,5 @@
+TABLERO "Demo" {
+COLUMNA "TODO" {
+  tarea: "Tarea sin cerrar [prioridad: BAJA, responsable: "Luis", fecha_limite: 2026-05-15]
+};
+};

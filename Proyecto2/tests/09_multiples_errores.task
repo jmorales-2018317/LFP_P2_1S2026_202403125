@@ -1,0 +1,7 @@
+TABLERO "Demo" {
+COLUMNA "TODO" {
+  tarea: "T1" [prioridad ALTA, responsable: "Ana", fecha_limite: 2026-05-01],
+  tarea: "T2" [prioridad: $$ , responsable: "Beto", fecha_limite: 2026-13-40],
+  tarea: "T3 sin cerrar [prioridad: BAJA, responsable: "Z", fecha_limite: 2026-05-02]
+};
+};

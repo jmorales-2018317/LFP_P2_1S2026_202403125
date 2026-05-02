@@ -1,0 +1,5 @@
+TABLERO "Sprint" {
+COLUMNA "Backlog" {
+  tarea: "Refinar historias" [prioridad: MEDIA, responsable: "Equipo", fecha_limite: 2026-05-30]
+};
+};

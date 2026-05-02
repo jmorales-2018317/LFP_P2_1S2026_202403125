@@ -1,0 +1,5 @@
+TABLERO "Demo" {
+COLUMNA "TODO" {
+  tarea: "Olvidar dos puntos" [prioridad ALTA, responsable: "Eva", fecha_limite: 2026-05-20]
+};
+};

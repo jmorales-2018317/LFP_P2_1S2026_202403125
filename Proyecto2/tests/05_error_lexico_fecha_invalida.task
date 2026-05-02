@@ -1,0 +1,5 @@
+TABLERO "Demo" {
+COLUMNA "TODO" {
+  tarea: "Validar fechas" [prioridad: ALTA, responsable: "Sara", fecha_limite: 2026-13-40]
+};
+};
