@@ -1,12 +1,5 @@
 # Manual Técnico — TaskScript
 
-Universidad de San Carlos de Guatemala
-Facultad de Ingeniería · Escuela de Ciencias y Sistemas
-Curso: **Lenguajes Formales y de Programación** · 1er semestre 2026
-Carné: **202403125**
-
----
-
 ## 1. Objetivo
 
 `TaskScript` es una aplicación de escritorio en C++17 con interfaz gráfica

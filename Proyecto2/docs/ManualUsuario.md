@@ -1,15 +1,5 @@
 # Manual de Usuario — TaskScript
 
-Universidad de San Carlos de Guatemala
-Curso: **Lenguajes Formales y de Programación** · 1er semestre 2026
-Carné: **202403125**
-
-Este manual explica cómo compilar `TaskScript`, escribir archivos `.task`,
-analizarlos en la aplicación y obtener los reportes HTML y el árbol de
-derivación en Graphviz.
-
----
-
 ## 1. Requisitos
 
 | Componente | Versión mínima | Notas |

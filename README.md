@@ -1,16 +1,12 @@
 # LFP_P2_1S2026_202403125 — TaskScript
 
-Proyecto 2 del curso **Lenguajes Formales y de Programación** (1er semestre 2026).
+Proyecto 2 del curso Lenguajes Formales y de Programación
 Universidad de San Carlos de Guatemala · Facultad de Ingeniería · Escuela de Ciencias y Sistemas.
 
 - **Carné:** 202403125
 - **Lenguaje:** C++17
 - **Interfaz gráfica:** Qt 6 (Widgets)
 - **Sistema de construcción:** CMake (≥ 3.16)
-
-> Todo el código y la documentación del proyecto residen dentro de la
-> carpeta [`Proyecto2/`](Proyecto2/), tal como exige la sección 10 del
-> enunciado.
 
 ---
 
@@ -31,14 +27,14 @@ TaskScript (gestión de tableros Kanban) y produce:
 
 ### Cumplimiento de las restricciones del enunciado
 
-- ✅ AFD manual implementado en `LexicalAnalyzer::nextToken()` con función
+- AFD manual implementado en `LexicalAnalyzer::nextToken()` con función
   de transición explícita. **Sin `std::regex`.**
-- ✅ Parser descendente recursivo manual con una función por producción
+- Parser descendente recursivo manual con una función por producción
   de la GLC. **Sin ANTLR/Bison/Yacc/Flex.**
-- ✅ Construcción del árbol de derivación y exportación a Graphviz.
-- ✅ GUI Qt 6 con todos los paneles requeridos.
-- ✅ Tabla de tokens y de errores con posición exacta.
-- ✅ Modo pánico para recuperación de errores sintácticos.
+- Construcción del árbol de derivación y exportación a Graphviz.
+- GUI Qt 6 con todos los paneles requeridos.
+- Tabla de tokens y de errores con posición exacta.
+- Modo pánico para recuperación de errores sintácticos.
 
 ---
 
