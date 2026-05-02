@@ -1,0 +1,75 @@
+# ===== Build directories =====
+build/
+build-*/
+out/
+cmake-build-*/
+Proyecto2/build/
+Proyecto2/build-*/
+
+# ===== CMake =====
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+Makefile
+*.cmake
+!CMakeLists.txt
+!*.cmake.in
+
+# ===== Qt =====
+*.pro.user*
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qm
+.qmake.cache
+.qmake.stash
+Makefile.*
+object_script.*
+.qtc_clangd/
+
+# ===== C/C++ =====
+*.o
+*.obj
+*.lo
+*.slo
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.out
+*.app
+*.gch
+*.pch
+*.d
+
+# ===== IDEs / editores =====
+.vscode/
+.idea/
+*.swp
+*~
+.cache/
+.clangd/
+compile_commands.json
+
+# ===== Generados por la app =====
+arbol.dot
+arbol.png
+KanbanReport.html
+CargaResponsableReport.html
+*.generated.html
+
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ===== Logs =====
+*.log
