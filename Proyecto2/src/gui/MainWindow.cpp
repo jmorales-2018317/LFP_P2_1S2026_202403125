@@ -125,8 +125,7 @@ void MainWindow::buildUi() {
     connect(actSave, &QAction::triggered, this, &MainWindow::onSaveFile);
     connect(actAnalyze, &QAction::triggered, this, [this, actReports, actDot]() {
         onAnalyze();
-        const bool ok = analyzed_ && !lastErrors_.hasErrors();
-        actReports->setEnabled(ok);
+        actReports->setEnabled(analyzed_ && !lastErrors_.hasSyntaxErrors());
         actDot->setEnabled(analyzed_);
     });
     connect(actReports, &QAction::triggered, this, &MainWindow::onGenerateReports);
@@ -270,9 +269,9 @@ void MainWindow::onGenerateReports() {
         QMessageBox::information(this, tr("Atencion"), tr("Primero ejecute el analisis."));
         return;
     }
-    if (lastErrors_.hasErrors()) {
+    if (lastErrors_.hasSyntaxErrors()) {
         QMessageBox::warning(this, tr("Atencion"),
-            tr("Existen errores en el analisis. Corrija los errores antes de generar los reportes."));
+            tr("Existen errores sintacticos. Corrija los errores sintacticos antes de generar los reportes."));
         return;
     }
     ensureOutputDirectory();
